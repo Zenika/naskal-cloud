@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Naskal Benchmark 2026 — Interactive cloud provider comparison across 11 dimensions and 36 sub-dimensions with Gartner-style quadrant visualization.">
+    <meta property="og:title" content="Naskal Benchmark — Cloud Providers 2026">
+    <meta property="og:description" content="Compare 15 cloud providers across performance, security, sovereignty, cost and more.">
+    <meta name="theme-color" content="#000000">
+    <title>Naskal Benchmark</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
+</head>
+<body>
+<header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+        <img class="logo"
+             src="https://static.wixstatic.com/media/3c87fe_5dfbedafc75a49e5833e8e3bcf9befcb~mv2.png/v1/crop/x_0,y_0,w_299,h_54/fill/w_144,h_26,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/3c87fe_5dfbedafc75a49e5833e8e3bcf9befcb~mv2.png"
+             alt="Naskal Logo" width="144" height="26">
+        <ul class="nav-links">
+            <li><a href="https://www.naskal.fr">HOME</a></li>
+            <li><a href="/" class="active">YOUR BENCHMARK</a></li>
+        </ul>
+    </nav>
+</header>
+<main id="main-content">
+    <div class="container">
+        <section class="hero">
+            <h1 class="quadrant-title">Benchmark of the 2026 Cloud Providers</h1>
+            <div class="intro-section">
+                <p class="intro-paragraph">
+                    In 2026, the cloud computing ecosystem is primarily shaped by major global providers such as Amazon Web
+                    Services (AWS), Microsoft Azure, and Google Cloud Platform (GCP). Alongside these giants, other significant
+                    players including Oracle Cloud, IBM Cloud, and Alibaba Cloud continue to expand their presence, offering a
+                    diverse range of infrastructure, platform, and software services to organizations worldwide.
+                </p>
+                <p class="intro-paragraph">
+                    To effectively benchmark these providers, several critical analysis axes are considered: infrastructure
+                    performance and scalability, cost optimization and pricing models, security and regulatory compliance,
+                    global availability and latency, and the integration of advanced technologies like Artificial Intelligence
+                    and Edge Computing. These dimensions provide a holistic view of each provider's capabilities in the current
+                    technological landscape.
+                </p>
+                <p class="intro-paragraph">
+                    Furthermore, digital sovereignty and geopolitical risks have become paramount in 2026. The choice of a cloud
+                    provider is increasingly influenced by data residency requirements, local regulations, and the need to
+                    mitigate dependencies on foreign jurisdictions. Organizations must navigate the complexities of
+                    international trade relations and potential service disruptions caused by geopolitical tensions, making
+                    sovereignty a key differentiator in cloud strategy.
+                </p>
+            </div>
+        </section>
+        <section class="analysis-section" aria-label="Benchmark Analysis">
+            <h2 id="analysis-heading" class="sr-only">Analysis Dashboard</h2>
+            <div class="side-by-side-container">
+                <div class="quadrant-section">
+                    <div class="quadrant-container">
+                        <div id="vendor-points-container"></div>
+                        <span class="quadrant-label top-right">Leaders</span>
+                        <span class="quadrant-label top-left">Challengers</span>
+                        <span class="quadrant-label bottom-right">Visionaries</span>
+                        <span class="quadrant-label bottom-left">Niche Players</span>
+                        <div class="quadrant top-left"></div>
+                        <div class="quadrant top-right"></div>
+                        <div class="quadrant bottom-left"></div>
+                        <div class="quadrant bottom-right"></div>
+
+                        <div class="axis-label y-axis" id="y-axis-label">Ability to Execute</div>
+                        <div class="axis-label x-axis" id="x-axis-label">Completeness of Vision</div>
+                    </div>
+                    <div class="quadrant-controls">
+                        <div class="control-group">
+                            <label for="y-axis-select">Y Axis:</label>
+                            <select id="y-axis-select" class="axis-select"></select>
+                        </div>
+                        <div class="control-group">
+                            <label for="x-axis-select">X Axis:</label>
+                            <select id="x-axis-select" class="axis-select"></select>
+                        </div>
+                    </div>
+                </div>
+                <div id="weights-graph-container"></div>
+            </div>
+        </section>
+        <section class="data-section" aria-label="Detailed benchmark data">
+            <h2 class="section-heading">Detailed Benchmark Results</h2>
+            <div id="benchmark-table-container" role="region" aria-label="Benchmark comparison table" tabindex="0">
+                <div class="skeleton-loader" id="table-skeleton">
+                    <div class="skeleton-bar"></div>
+                    <div class="skeleton-bar"></div>
+                    <div class="skeleton-bar"></div>
+                    <div class="skeleton-bar"></div>
+                    <div class="skeleton-bar"></div>
+                    <div class="skeleton-bar"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+<footer class="site-footer">
+    <p>&copy; 2026 Naskal — Cloud Provider Benchmark. All rights reserved.</p>
+</footer>
+<script src="js/config.js"></script>
+<script src="js/models.js"></script>
+<script src="js/data.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/renderer-table.js"></script>
+<script src="js/renderer-graph.js"></script>
+<script src="js/renderer-quadrant.js"></script>
+<script src="js/weights.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

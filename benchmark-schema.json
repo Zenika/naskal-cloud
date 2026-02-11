@@ -1,0 +1,619 @@
+{
+  "schema_version": "1.0",
+  "benchmark_title": "Cloud Provider Benchmark 2026",
+  "instructions": "For each sub-dimension, provide a score (0-100) and a justification based on web research. Sources must be cited.",
+  "provider": {
+    "id": "",
+    "name": "",
+    "headquarters": "",
+    "research_date": ""
+  },
+  "dimensions": [
+    {
+      "id": "1",
+      "name": "Performance",
+      "sub_dimensions": [
+        {
+          "id": "1.1",
+          "name": "Compute (CPU/GPU)",
+          "description": "Raw compute power and processing capabilities",
+          "metrics": [
+            "SPEC CPU benchmark scores",
+            "FLOPS (floating-point operations per second)",
+            "Execution time benchmarks (POV-RAY, CoreMark)",
+            "GPU compute performance (CUDA cores, tensor perf)"
+          ],
+          "score": null,
+          "justification": "",
+          "sources": []
+        },
+        {
+          "id": "1.2",
+          "name": "Storage",
+          "description": "Storage performance across block, object and file systems",
+          "metrics": [
+            "IOPS (Input/Output Operations Per Second)",
+            "Throughput (MB/s)",
+            "Read/Write latency",
+            "Benchmark tools: IOzone, Bonnie++, fio"
+          ],
+          "score": null,
+          "justification": "",
+          "sources": []
+        },
+        {
+          "id": "1.3",
+          "name": "Networking",
+          "description": "Network performance and quality of service",
+          "metrics": [
+            "Latency (ms) inter-region and intra-region",
+            "Bandwidth (Gbps) per instance type",
+            "Packet loss rate",
+            "Jitter and network consistency"
+          ],
+          "score": null,
+          "justification": "",
+          "sources": []
+        },
+        {
+          "id": "1.4",
+          "name": "Global Application Performance",
+          "description": "End-to-end application-level performance",
+          "metrics": [
+            "Response time under load (p50, p95, p99)",
+            "Transactions per second (TPS)",
+            "Cold start latency (serverless)",
+            "CDN edge performance"
+          ],
+          "score": null,
+          "justification": "",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Cost & Economic Efficiency",
+      "sub_dimensions": [
+        {
+          "id": "2.1",
+          "name": "Pricing Models",
+          "description": "Flexibility and competitiveness of pricing options",
+          "metrics": [
+            "Cost per vCPU-hour (EUR)",
+            "Reserved instance savings rate (%)",
+            "Spot/preemptible pricing vs on-demand",
+            "Savings plans availability and flexibility",
+            "Free tier scope and duration"
+          ],
+          "score": null,
+          "justification": "",
+          "sources": []
+        },
+        {
+          "id": "2.2",
+          "name": "Total Cost of Ownership (TCO)",
+          "description": "Complete cost picture including hidden costs",
+          "metrics": [
+            "Global TCO (EUR/month) for reference workloads",
+            "Cost per workload type (web, DB, AI/ML, HPC)",
+            "Egress / data transfer fees",
+            "Support tier costs",
+            "License and marketplace costs"
+          ],
+          "score": null,
+          "justification": "",
+          "sources": []
+        },
+        {
+          "id": "2.3",
+          "name": "Cost Optimization",
+          "description": "Tools and mechanisms to reduce spend",
+          "metrics": [
+            "Cost/performance ratio",
+            "Native cost optimization tools (advisors, recommendations)",
+            "Savings via auto-scaling / rightsizing",
+            "Billing granularity (per-second, per-minute)",
+            "Budget alerts and spending controls"
+          ],
+          "score": null,
+          "justification": "",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Scalability & Elasticity",
+      "sub_dimensions": [
+        {
+          "id": "3.1",
+          "name": "Horizontal / Vertical Scaling",
+          "description": "Ability to scale compute resources up and out",
+          "metrics": [
+            "Instance provisioning time (seconds)",
+            "Maximum instances / scale limit per service",
+            "Vertical scaling capabilities (live resize)",
+            "Cluster scaling limits (Kubernetes, VM scale sets)"
+          ],
+          "score": null,
+          "justification": "",
+          "sources": []
+        },
+        {
+          "id": "3.2",
+          "name": "Auto-scaling",
+          "description": "Automated scaling responsiveness and intelligence",
+          "metrics": [
+            "Reaction time to load spikes (seconds)",
+            "Scaling precision (over/under-provisioning rate)",
+            "Predictive scaling capabilities",
+            "Custom scaling policies flexibility"
+          ],
+          "score": null,
+          "justification": "",
+          "sources": []
+        },
+        {
+          "id": "3.3",
+          "name": "Elasticity",
+          "description": "Ability to dynamically match resources to demand",
+          "metrics": [
+            "Resource demand vs load intensity ratio",
+            "Scale-down time and efficiency",
+            "Serverless elasticity (concurrency limits)",
+            "Cost efficiency during scale events"
+          ],
+          "score": null,
+          "justification": "",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Availability & Reliability",
+      "sub_dimensions": [
+        {
+          "id": "4.1",
+          "name": "Uptime / SLA",
+          "description": "Service availability guarantees and track record",
+          "metrics": [
+            "SLA guarantees (99.9% / 99.99% / 99.999%)",
+            "Annual downtime (minutes)",
+            "Historical uptime track record",
+            "SLA financial credits and enforcement"
+          ],
+          "score": null,
+          "justification": "",
+          "sources": []
+        },
+        {
+          "id": "4.2",
+          "name": "Fault Tolerance",
+          "description": "Resilience to failures and recovery capabilities",
+          "metrics": [
+            "MTBF (Mean Time Between Failures)",
+            "MTTR (Mean Time To Recovery)",
+            "Multi-AZ / Multi-region architectures",
+            "Automatic failover capabilities",
+            "Chaos engineering tools and practices"
+          ],
+          "score": null,
+          "justification": "",
+          "sources": []
+        },
+        {
+          "id": "4.3",
+          "name": "Geo-distribution",
+          "description": "Global infrastructure footprint",
+          "metrics": [
+            "Number of regions worldwide",
+            "Number of availability zones",
+            "Inter-region latency (ms)",
+            "Edge locations / PoPs count",
+            "Planned region expansions"
+          ],
+          "score": null,
+          "justification": "",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Security & Compliance",
+      "sub_dimensions": [
+        {
+          "id": "5.1",
+          "name": "Security Controls",
+          "description": "Technical security mechanisms and baseline hardening",
+          "metrics": [
+            "Encryption at rest (algorithms, key management)",
+            "Encryption in transit (TLS versions, mTLS)",
+            "IAM capabilities (RBAC, ABAC, MFA, federation)",
+            "WAF and DDoS protection",
+            "CIS benchmark compliance scores",
+            "Zero-trust architecture support"
+          ],
+          "score": null,
+          "justification": "",
+          "sources": []
+        },
+        {
+          "id": "5.2",
+          "name": "Certifications",
+          "description": "Regulatory and industry compliance certifications",
+          "metrics": [
+            "GDPR compliance",
+            "ISO 27001 / 27017 / 27018",
+            "SOC 1 / SOC 2 / SOC 3",
+            "SecNumCloud qualification",
+            "EUCS (EU Cloud Certification Scheme)",
+            "PCI DSS, HIPAA, FedRAMP",
+            "Total number and relevance of certifications"
+          ],
+          "score": null,
+          "justification": "",
+          "sources": []
+        },
+        {
+          "id": "5.3",
+          "name": "Risk Management",
+          "description": "Proactive threat detection and incident response",
+          "metrics": [
+            "Vulnerability detection time",
+            "Remediation time (MTTR for security incidents)",
+            "Proactive security alerts and advisories",
+            "Security operations center (SOC) capabilities",
+            "Threat intelligence integration"
+          ],
+          "score": null,
+          "justification": "",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Support & User Experience",
+      "sub_dimensions": [
+        {
+          "id": "6.1",
+          "name": "Interface & Tools",
+          "description": "Quality and usability of management interfaces",
+          "metrics": [
+            "Web console quality and responsiveness",
+            "CLI completeness and usability",
+            "API coverage and consistency",
+            "IaC support (Terraform, Pulumi, native)",
+            "Usability score / learning curve",
+            "Mobile management app"
+          ],
+          "score": null,
+          "justification": "",
+          "sources": []
+        },
+        {
+          "id": "6.2",
+          "name": "Customer Support",
+          "description": "Support quality, responsiveness and satisfaction",
+          "metrics": [
+            "Response time by support tier (SLA)",
+            "NPS / customer satisfaction scores",
+            "Support levels (basic, developer, business, enterprise)",
+            "24/7 availability",
+            "Dedicated account managers / TAMs",
+            "Community and forum activity"
+          ],
+          "score": null,
+          "justification": "",
+          "sources": []
+        },
+        {
+          "id": "6.3",
+          "name": "Documentation",
+          "description": "Quality and accessibility of technical documentation",
+          "metrics": [
+            "Documentation completeness",
+            "Freshness and update frequency",
+            "Multi-language availability",
+            "Code examples and tutorials",
+            "Architecture reference guides",
+            "Training and certification programs"
+          ],
+          "score": null,
+          "justification": "",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "name": "Integration & Compatibility",
+      "sub_dimensions": [
+        {
+          "id": "7.1",
+          "name": "APIs & Ecosystem",
+          "description": "Breadth and quality of APIs and ecosystem compatibility",
+          "metrics": [
+            "Number of available APIs / services",
+            "Kubernetes support (managed, conformance level)",
+            "Terraform provider completeness",
+            "Open standards adoption (OCI, CNCF, OpenTelemetry)",
+            "Marketplace breadth (ISV solutions)"
+          ],
+          "score": null,
+          "justification": "",
+          "sources": []
+        },
+        {
+          "id": "7.2",
+          "name": "Migration & Portability",
+          "description": "Ease of migrating to and from the provider",
+          "metrics": [
+            "Native migration tools and services",
+            "Data egress costs (EUR/GB)",
+            "Ease of exit / vendor lock-in score",
+            "Container and VM portability",
+            "Database migration tools"
+          ],
+          "score": null,
+          "justification": "",
+          "sources": []
+        },
+        {
+          "id": "7.3",
+          "name": "Partnerships",
+          "description": "Partner ecosystem and third-party integrations",
+          "metrics": [
+            "Number of certified technology partners",
+            "ISV / SaaS integrations",
+            "DevOps tool integrations (CI/CD, monitoring)",
+            "Consulting partner network",
+            "Channel partner program maturity"
+          ],
+          "score": null,
+          "justification": "",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "name": "Innovation & Features",
+      "sub_dimensions": [
+        {
+          "id": "8.1",
+          "name": "Advanced Services",
+          "description": "Availability of cutting-edge cloud services",
+          "metrics": [
+            "AI/ML managed services (training, inference, MLOps)",
+            "Serverless compute and database options",
+            "Edge computing services",
+            "Quantum computing access",
+            "Total number of unique/distinct services",
+            "GenAI / LLM platform services"
+          ],
+          "score": null,
+          "justification": "",
+          "sources": []
+        },
+        {
+          "id": "8.2",
+          "name": "Innovation Pace",
+          "description": "Speed and quality of new feature delivery",
+          "metrics": [
+            "New service/feature launch frequency",
+            "Public roadmap transparency",
+            "R&D investment (absolute and % of revenue)",
+            "Open source contributions",
+            "Patent portfolio in cloud technologies"
+          ],
+          "score": null,
+          "justification": "",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "name": "Sustainability & Environment",
+      "sub_dimensions": [
+        {
+          "id": "9.1",
+          "name": "Energy Efficiency",
+          "description": "Data center energy performance",
+          "metrics": [
+            "PUE (Power Usage Effectiveness) average",
+            "% renewable energy usage",
+            "Renewable energy procurement strategy (PPAs, RECs)",
+            "Cooling technology innovation",
+            "Energy-efficient hardware adoption"
+          ],
+          "score": null,
+          "justification": "",
+          "sources": []
+        },
+        {
+          "id": "9.2",
+          "name": "Carbon Footprint",
+          "description": "Carbon emissions measurement and reduction",
+          "metrics": [
+            "gCO2eq per kWh or per vCPU-hour",
+            "Native carbon measurement/reporting tools",
+            "Carbon neutrality status and timeline",
+            "Scope 1, 2, 3 emissions reporting",
+            "Science-Based Targets initiative (SBTi) commitment"
+          ],
+          "score": null,
+          "justification": "",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "name": "Governance & Lock-in",
+      "sub_dimensions": [
+        {
+          "id": "10.1",
+          "name": "Portability / Open Standards",
+          "description": "Adherence to open standards and multi-cloud readiness",
+          "metrics": [
+            "Container support (OCI-compliant runtimes)",
+            "Open data formats support",
+            "Multi-cloud management tools",
+            "API compatibility with industry standards",
+            "Abstraction layer availability"
+          ],
+          "score": null,
+          "justification": "",
+          "sources": []
+        },
+        {
+          "id": "10.2",
+          "name": "Data Sovereignty",
+          "description": "Data residency controls and sovereign cloud capabilities",
+          "metrics": [
+            "Sovereign region availability",
+            "Data residency guarantees (contractual)",
+            "GDPR compliance depth",
+            "SecNumCloud / EUCS qualified offerings",
+            "Local data processing guarantees"
+          ],
+          "score": null,
+          "justification": "",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "name": "Digital Sovereignty",
+      "sub_dimensions": [
+        {
+          "id": "11.1",
+          "name": "Strategic Sovereignty",
+          "description": "Corporate governance independence from non-EU influence",
+          "metrics": [
+            "% EU capital / shareholders (>50-61% for SecNumCloud)",
+            "Governance structure stability",
+            "GAIA-X participation and role",
+            "EU cloud initiatives involvement",
+            "Independence from non-EU parent companies"
+          ],
+          "score": null,
+          "justification": "",
+          "sources": []
+        },
+        {
+          "id": "11.2",
+          "name": "Legal & Jurisdictional Sovereignty",
+          "description": "Legal immunity from extra-EU jurisdictional reach",
+          "metrics": [
+            "Exposure to CLOUD Act / FISA / EO 12333",
+            "EU-only legal entity structure",
+            "Immunity clauses against foreign injunctions",
+            "Contractual protections against extraterritorial access",
+            "Legal challenge track record"
+          ],
+          "score": null,
+          "justification": "",
+          "sources": []
+        },
+        {
+          "id": "11.3",
+          "name": "Data & AI Sovereignty",
+          "description": "Data and AI processing confined to EU jurisdiction",
+          "metrics": [
+            "% data stored and processed in EU (100% required)",
+            "Customer-managed encryption keys (BYOK/HYOK)",
+            "Access auditability (who accessed what, when)",
+            "EU AI model training and control",
+            "Data classification and labeling tools"
+          ],
+          "score": null,
+          "justification": "",
+          "sources": []
+        },
+        {
+          "id": "11.4",
+          "name": "Operational Sovereignty",
+          "description": "Operations run exclusively by EU-based personnel",
+          "metrics": [
+            "% operations staff based in EU",
+            "Support without extra-EU dependencies",
+            "MTTR for incidents without external recourse",
+            "EU-based NOC / SOC",
+            "Operational autonomy from parent company"
+          ],
+          "score": null,
+          "justification": "",
+          "sources": []
+        },
+        {
+          "id": "11.5",
+          "name": "Supply Chain Sovereignty",
+          "description": "Hardware and software supply chain independence",
+          "metrics": [
+            "% EU-sourced suppliers and components",
+            "Supply chain traceability and transparency",
+            "Third-party audit frequency",
+            "Resilience to geopolitical supply disruptions",
+            "Alternative sourcing strategies"
+          ],
+          "score": null,
+          "justification": "",
+          "sources": []
+        },
+        {
+          "id": "11.6",
+          "name": "Technological Sovereignty",
+          "description": "Technology stack independence and openness",
+          "metrics": [
+            "% open source in technology stack",
+            "Non-proprietary API usage",
+            "Open standard interoperability",
+            "Migration time and cost (portability)",
+            "Dependency on proprietary technologies"
+          ],
+          "score": null,
+          "justification": "",
+          "sources": []
+        },
+        {
+          "id": "11.7",
+          "name": "Security & Compliance Sovereignty",
+          "description": "EU/national security certifications and audit compliance",
+          "metrics": [
+            "SecNumCloud 3.2 qualification",
+            "EUCS High level certification",
+            "NIS2 directive compliance",
+            "DORA regulation compliance",
+            "ANSSI audit results",
+            "Vulnerabilities linked to non-EU dependencies"
+          ],
+          "score": null,
+          "justification": "",
+          "sources": []
+        },
+        {
+          "id": "11.8",
+          "name": "Environmental Sovereignty",
+          "description": "EU-sourced sustainable energy and Green Deal alignment",
+          "metrics": [
+            "% renewable energy sourced within EU",
+            "Carbon footprint controlled and reported",
+            "EU Green Deal alignment score",
+            "EU taxonomy for sustainable activities compliance",
+            "Local environmental regulation adherence"
+          ],
+          "score": null,
+          "justification": "",
+          "sources": []
+        }
+      ]
+    }
+  ]
+}
